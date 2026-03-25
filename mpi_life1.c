@@ -1,24 +1,12 @@
-/* /life_mpi.c
-   MPI Game of Life (row-wise 1D decomposition) with ghost cells + non-blocking halos.
 
-   Build:
-     mpicc -O3 -Wall -Wextra -std=c11 -o life_mpi life_mpi.c
-
-   Run:
-     mpirun -np <P> ./life_mpi <N> <max_iters> <num_procs_expected> <output_dir>
-
-   Output:
-     Writes final board to: <output_dir>/life_final_N<N>_P<P>.txt
-*/
 /* mpi_life1.c
-   MPI Game of Life (row-wise distribution) with ghost cells + non-blocking halo exchange.
-   FIX: removes drand48/srand48 to avoid implicit-declaration runtime crashes (SIGBUS).
-   Uses portable SplitMix64 RNG for deterministic initialization.
-
-   Build:
+Patrick Dolan
+CS 481
+Homework 3: Conway's Game of Life in MPI
+Build:
      mpicc -O3 -Wall -Wextra -std=c11 -o life_mpi mpi_life1.c
 
-   Run:
+Run:
      mpiexec -n P ./life_mpi N max_iters P out_dir
 */
 
