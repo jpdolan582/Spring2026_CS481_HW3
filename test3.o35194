@@ -1,0 +1,28 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscripthw3.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.test3.35194.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202603251255.00
+  Job Name: test3
+  Queue: -q small
+  Constraints: 
+  Using  1  cores on master node  asax007.asc.edu
+  Node list:  asax007.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_script myscripthw3.sh     
+  Queue submit command:
+qsub -q small -j oe -N test3 -a 202603251255.00 -r n -M jpdolan@crimson.ua.edu -l walltime=60:00:00 -l select=ncpus=1:mem=1000mb 
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "intel-mpi"
+   Try: "module spider intel-mpi" to see how to load the module(s).
+
+
+
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory

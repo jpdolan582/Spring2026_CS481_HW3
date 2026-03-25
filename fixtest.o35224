@@ -1,0 +1,56 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: fixscript.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.fixtest.35224.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202603251302.50
+  Job Name: fixtest
+  Queue: -q small
+  Constraints: 
+  Using  1  cores on master node  asax006.asc.edu
+  Node list:  asax006.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_script fixscript.sh     
+  Queue submit command:
+qsub -q small -j oe -N fixtest -a 202603251302.50 -r n -M jpdolan@crimson.ua.edu -l walltime=60:00:00 -l select=ncpus=1:mem=1000mb 
+=== Host: asax006 ===
+=== Workdir: /home/ualclsf0011/Spring2026_CS481_HW3 ===
+=== PBS_NP: 1 ===
+Loaded MPI module: openmpi
+=== module list ===
+
+Currently Loaded Modules:
+  1) ofed/3.0.0-058000_25.04   6) zstd/1.4.5
+  2) gmp/6.2.1-vio2wnh         7) gcc/12.3.0-rwmy6jl
+  3) mpfr/4.2.0-hlmrah7        8) binutils/2.41
+  4) mpc/1.3.1-4fxtftl         9) ucx/1.13.1
+  5) zlib-ng/2.1.4-mrmqegl    10) openmpi/4.1.7-gcc12
+
+ 
+
+=== toolchain ===
+/apps/x86-64/apps/openmpi_4.1.7_gcc12/bin/mpicc
+/apps/x86-64/apps/openmpi_4.1.7_gcc12/bin/mpiexec
+/apps/x86-64/apps/openmpi_4.1.7_gcc12/bin/mpirun
+gcc (Spack GCC) 12.3.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+=== building life_mpi from mpi_life1.c ===
+=== ldd (mpi libs) ===
+	libmpi.so.40 => /apps/x86-64/apps/openmpi_4.1.7_gcc12/lib/libmpi.so.40 (0x00001543f511e000)
+	libopen-rte.so.40 => /apps/x86-64/apps/openmpi_4.1.7_gcc12/lib/libopen-rte.so.40 (0x00001543f4deb000)
+	libopen-pal.so.40 => /apps/x86-64/apps/openmpi_4.1.7_gcc12/lib/libopen-pal.so.40 (0x00001543f49f1000)
+=== running with mpiexec, ranks=1 ===
+Time taken 401.822658 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P1.txt
+=== done ===
+total 62636
+-rw-r--r-- 1 ualclsf0011 ualclass 52428800 Mar 25 13:09 life_final_N5120_P1.txt

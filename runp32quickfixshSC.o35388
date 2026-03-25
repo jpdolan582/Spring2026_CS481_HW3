@@ -1,0 +1,60 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: run_p32_quickfix.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.runp32quickfixshSC.35388.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202603251419.29
+  Job Name: runp32quickfixshSC
+  Queue: -q large
+  Constraints: 
+  Using  1  cores on master node  asax006.asc.edu
+  Node list:  asax006.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_script run_p32_quickfix.sh     
+  Queue submit command:
+qsub -q large -j oe -N runp32quickfixshSC -a 202603251419.29 -r n -M jpdolan@crimson.ua.edu -l walltime=360:00:00 -l select=ncpus=1:mem=1000mb 
+
+Currently Loaded Modules:
+  1) ofed/3.0.0-058000_25.04   6) zstd/1.4.5
+  2) gmp/6.2.1-vio2wnh         7) gcc/12.3.0-rwmy6jl
+  3) mpfr/4.2.0-hlmrah7        8) binutils/2.41
+  4) mpc/1.3.1-4fxtftl         9) ucx/1.13.1
+  5) zlib-ng/2.1.4-mrmqegl    10) openmpi/4.1.7-gcc12
+
+ 
+
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 32
+slots that were requested by the application:
+
+  ./life_mpi
+
+Either request fewer slots for your application, or make more slots
+available for use.
+
+A "slot" is the Open MPI term for an allocatable unit where we can
+launch a process.  The number of slots available are defined by the
+environment in which Open MPI processes are run:
+
+  1. Hostfile, via "slots=N" clauses (N defaults to number of
+     processor cores if not provided)
+  2. The --host command line parameter, via a ":N" suffix on the
+     hostname (N defaults to 1 if not provided)
+  3. Resource manager (e.g., SLURM, PBS/Torque, LSF, etc.)
+  4. If none of a hostfile, the --host command line parameter, or an
+     RM is present, Open MPI defaults to the number of processor cores
+
+In all the above cases, if you want Open MPI to default to the number
+of hardware threads instead of the number of processor cores, use the
+--use-hwthread-cpus option.
+
+Alternatively, you can use the --oversubscribe option to ignore the
+number of available slots when deciding the number of processes to
+launch.
+--------------------------------------------------------------------------

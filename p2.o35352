@@ -1,0 +1,31 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: run_p2.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.p2.35352.asax-pbs1
+  The memory limit is: 2gb
+  The job will start running after: 202603251358.50
+  Job Name: p2
+  Queue: -q small
+  Constraints: 
+  Using  2  cores on master node  asax006.asc.edu
+  Node list:  asax006.asc.edu asax006.asc.edu
+  Cores:  2
+  Command typed:
+/scripts/run_script run_p2.sh     
+  Queue submit command:
+qsub -q small -j oe -N p2 -a 202603251358.50 -r n -M jpdolan@crimson.ua.edu -l walltime=60:00:00 -l select=ncpus=2:mpiprocs=2:mem=2000mb 
+Loaded MPI module: openmpi
+=== P=2 trial=1 ===
+Time taken 295.750913 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P2.txt
+=== P=2 trial=2 ===
+Time taken 304.682532 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P2.txt
+=== P=2 trial=3 ===
+Time taken 302.168823 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P2.txt

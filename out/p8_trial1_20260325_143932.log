@@ -1,0 +1,2 @@
+Time taken 217.042126 seconds for 5000 iterations, cells alive = 780937
+Wrote final board to out/life_final_N5120_P8.txt

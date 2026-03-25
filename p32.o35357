@@ -1,0 +1,31 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: run_p32.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.p32.35357.asax-pbs1
+  The memory limit is: 32gb
+  The job will start running after: 202603251400.27
+  Job Name: p32
+  Queue: -q large
+  Constraints: 
+  Using  32  cores on master node  asax016.asc.edu
+  Node list:  asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu asax016.asc.edu
+  Cores:  32
+  Command typed:
+/scripts/run_script run_p32.sh     
+  Queue submit command:
+qsub -q large -j oe -N p32 -a 202603251400.27 -r n -M jpdolan@crimson.ua.edu -l walltime=360:00:00 -l select=ncpus=32:mpiprocs=32:mem=32000mb 
+Loaded MPI module: openmpi
+=== P=32 trial=1 ===
+Time taken 165.394029 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P32.txt
+=== P=32 trial=2 ===
+Time taken 183.714116 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P32.txt
+=== P=32 trial=3 ===
+Time taken 176.839311 seconds for 5000 iterations, cells alive = 775350
+Wrote final board to out/life_final_N5120_P32.txt

@@ -1,0 +1,22 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myscripthw3.sh
+  The time limit is 60:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The working directory is:  /scratch-local/ualclsf0011.test1.35181.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202603251248.08
+  Job Name: test1
+  Queue: -q small
+  Constraints: 
+  Using  1  cores on master node  asax007.asc.edu
+  Node list:  asax007.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_script myscripthw3.sh     
+  Queue submit command:
+qsub -q small -j oe -N test1 -a 202603251248.08 -r n -M jpdolan@crimson.ua.edu -l walltime=60:00:00 -l select=ncpus=1:mem=1000mb 
+./myscripthw3.sh: line 2: mpirun: command not found

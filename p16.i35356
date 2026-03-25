@@ -1,0 +1,18 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: run_p16.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The memory limit is: 16gb
+  The job will start running after: 202603251400.06
+  Job Name: p16
+  Queue: -q large
+  Constraints: 
+  Command typed:
+/scripts/run_script run_p16.sh     
+  Queue submit command:
+qsub -q large -j oe -N p16 -a 202603251400.06 -r n -M jpdolan@crimson.ua.edu -l walltime=360:00:00 -l select=ncpus=16:mpiprocs=16:mem=16000mb 
+  Job number: 35356
+ 

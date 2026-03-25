@@ -1,0 +1,18 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: run_p8.sh
+  The time limit is 150:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsf0011/Spring2026_CS481_HW3
+  The memory limit is: 8gb
+  The job will start running after: 202603251359.42
+  Job Name: p8
+  Queue: -q medium
+  Constraints: 
+  Command typed:
+/scripts/run_script run_p8.sh     
+  Queue submit command:
+qsub -q medium -j oe -N p8 -a 202603251359.42 -r n -M jpdolan@crimson.ua.edu -l walltime=150:00:00 -l select=ncpus=8:mpiprocs=8:mem=8000mb 
+  Job number: 35355
+ 

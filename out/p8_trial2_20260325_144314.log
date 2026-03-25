@@ -1,0 +1,12 @@
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+./life_mpi: error while loading shared libraries: libmpifort.so.12: cannot open shared object file: No such file or directory
